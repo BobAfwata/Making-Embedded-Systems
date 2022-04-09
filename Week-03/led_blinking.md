@@ -5,12 +5,12 @@
 
 # Hardware Block Diagram of STM32F103C8T6
 
-![image info](./assets/bluepill.png)
+![title](assets/bluepill.png)
 
 # Setting Up Development Environment
 
 RT thread studio is an eclipse based IDE for programming microcontrollers 
-![image info](./assets/code.png)
+![title](assets/code.png)
 
 
 
@@ -37,9 +37,9 @@ Delay is realized using the rt_thread_mdelay()  to delay in milliseconds
 rt_thread_mdelay(500);
 
 ![](assets/leds.mp4)
-![image info](./assets/blink.png)
+![title](assets/blink.png)
 
-![image info](./assets/blink2.png)
+![title](assets/blink2.png)
 
 
 
