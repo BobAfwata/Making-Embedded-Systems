@@ -45,3 +45,41 @@ rt_thread_mdelay(500);
 
 # Video link
 [![Blinking Leds](./assets/blink.jpeg)](https://youtu.be/eHhJE-OexOc "Hooraay")
+
+## Without Using RT Thread HAL 
+
+From the schematic the onboard led is in port C
+![title](assets/schematic.jpeg))
+
+First look at the reference manual for stm32f1xx family of microcontrollers . Download the manual ancd check on page 51 as shown below
+![title](assets/memory_map.jpeg))
+GPIO port C has a base address at 0x4001-1000 while the RCC register has an address at 0x4002-1000.
+We first activate the clock for GPIO port C by setting the RCC_IOPCEN register 
+
+
+Initializing the onboard led using the registers
+RCC_APB2ENR |= RCC_IOPCEN;
+GPIOC_CRH &= 0xFF0FFFFF;
+GPIOC_CRH |= 0x00200000;
+
+
+
+In the main ,setup the RCC_APB2ENR register to act as an output
+Next, we need to configure the port C as push-pull output. We do this by writing into register GPIOC_CRH (offset 0x04), CNF = 0b00 (push-pull output) and MODE = 0b10 (low speed). Thus, for port C13 bits 23:20 are going to be set to 0x2.
+
+RCC_APB2ENR |= RCC_IOPCEN;
+GPIOC_CRH   &= 0xFF0FFFFF;
+GPIOC_CRH   |= 0x00200000;
+   
+
+# Turn on the LED
+GPIOC_ODR |=  GPIOC13;
+for (int i = 0; i < 500000; i++); // arbitrary delay
+
+# Turn off the led
+GPIOC_ODR &= ~GPIOC13;
+
+# Delay for some time
+
+for (int i = 0; i < 500000; i++); // arbitrary delay
+ 
