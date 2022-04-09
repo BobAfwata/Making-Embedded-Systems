@@ -44,3 +44,4 @@ rt_thread_mdelay(500);
 
 
 # Video link
+[![Blinking Leds](./assets/blink.jpeg)](https://youtu.be/eHhJE-OexOc "Hooraay")
