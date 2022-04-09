@@ -49,10 +49,10 @@ rt_thread_mdelay(500);
 ## Without Using RT Thread HAL 
 
 From the schematic the onboard led is in port C
-![title](assets/schematic.jpeg))
+![title](assets/schematic.PNG))
 
 First look at the reference manual for stm32f1xx family of microcontrollers . Download the manual ancd check on page 51 as shown below
-![title](assets/memory_map.jpeg))
+![title](assets/memory_map.PNG))
 GPIO port C has a base address at 0x4001-1000 while the RCC register has an address at 0x4002-1000.
 We first activate the clock for GPIO port C by setting the RCC_IOPCEN register 
 
