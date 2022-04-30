@@ -1,0 +1,5 @@
+../Core/Src/blinkie.c:11:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/blinkie.c:20:6:HAL_GPIO_EXTI_Callback	16	static
+../Core/Src/blinkie.c:28:6:BLINKIEstart	8	static
+../Core/Src/blinkie.c:34:6:BLINKIEstop	8	static
+../Core/Src/blinkie.c:40:6:BLINKIEcontrol	8	static

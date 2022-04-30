@@ -1,0 +1,5 @@
+../Core/Src/timer.c:8:6:TIM1_UP_IRQHandler	8	static
+../Core/Src/timer.c:13:6:TMRinit	16	static
+../Core/Src/timer.c:28:6:TMRstartBlinkTimer	8	static
+../Core/Src/timer.c:33:6:TMRstopBlinkTimer	8	static
+../Core/Src/timer.c:38:6:TMRisBlinkHandle	16	static

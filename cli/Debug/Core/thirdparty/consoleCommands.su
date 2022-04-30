@@ -1,0 +1,9 @@
+../Drivers/CMSIS/Include/core_cm3.h:1762:34:__NVIC_SystemReset	4	static,ignoring_inline_asm
+../Core/thirdparty/consoleCommands.c:41:25:ConsoleCommandComment	16	static
+../Core/thirdparty/consoleCommands.c:48:25:ConsoleCommandHelp	32	static
+../Core/thirdparty/consoleCommands.c:69:25:ConsoleCommandParamExampleInt16	24	static
+../Core/thirdparty/consoleCommands.c:86:25:ConsoleCommandParamExampleHexUint16	24	static
+../Core/thirdparty/consoleCommands.c:100:25:ConsoleCommandVer	24	static
+../Core/thirdparty/consoleCommands.c:111:25:ConsoleCommandRst	24	static
+../Core/thirdparty/consoleCommands.c:123:25:ConsoleCommandLed	32	static
+../Core/thirdparty/consoleCommands.c:170:31:ConsoleCommandsGetTable	4	static
