@@ -8,7 +8,7 @@ The emergence of smart speakers and voice controlled gadgets such as Amazon Alex
 
 In emerging  markets such as India and Asia  ,Sub saharan Africa ,Brazil etc  where connectivity is still an issue especially in rural areas 
 
-![title](assets/rural-kenya.PNG)
+![title](assets/rural-kenya.jpg)
 
 # Hardware Architechture 
 Help Grandma hardware consist of the following  
